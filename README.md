@@ -1,13 +1,8 @@
-<<<<<<< HEAD
-=======
-markdown
->>>>>>> 9655d2b3489b759ed97496985d8f19039ad40400
-# DeviceNest
+
 
 A device status dashboard built with React — log in to view the online/offline status of your Apple devices. Built as part of the Sigma School front-end development course.
 
-<<<<<<< HEAD
-![DeviceNest dashboard](./screenshot.png)
+![DeviceNest dashboard](./public/scc.png)
 
 ## Features
 
