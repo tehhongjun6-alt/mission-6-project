@@ -1,16 +1,24 @@
-# React + Vite
+markdown
+# DeviceNest
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A device status dashboard built with React — log in to view the online/offline status of your Apple devices. Built as part of the Sigma School front-end development course.
 
-Currently, two official plugins are available:
+<img width="1802" height="936" alt="scc" src="https://github.com/user-attachments/assets/06ee684c-c025-41f0-9f98-4cdc6ae4dee2" />
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- log in with demo credentials, protected by a route guard
+-  visiting `/dashboard` without logging in redirects you to `/login`
+-  each device shows its image, location, last seen time and status badge
+- filter devices by All / Online / Offline
+- login state is saved in the browser, so a page refresh keeps you logged in
+-  polished dark gradient UI that adapts to mobile and desktop
 
-## Expanding the ESLint configuration
+Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React 19** — components, props, state, Context
+- **Vite** — build tool and dev server
+- **React Router 7** — pages and route protection
+- **Bootstrap 5 + react-bootstrap** — layout and UI components
+- **usehooks-ts** — `useLocalStorage` for persistent login state
