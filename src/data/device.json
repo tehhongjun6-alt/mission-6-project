@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "iPhone 17 Pro Max",
+        "status": "Online",
+        "image": "/device_images/iphone17.jpg",
+        "lastSeen": "Active now",
+        "location": "Home"
+    },
+    {
+        "id": 2,
+        "name": "iPhone Duo",
+        "status": "Online",
+        "image": "/device_images/duo.jpg",
+        "lastSeen": "Active now",
+        "location": "Office"
+    },
+    {
+        "id": 3,
+        "name": "MacBook",
+        "status": "Online",
+        "image": "/device_images/mackbook.jpg",
+        "lastSeen": "Active 30 minutes ago",
+        "location": "Home"
+    },
+    {
+        "id": 4,
+        "name": "AirPods Pro",
+        "status": "Online",
+        "image": "/device_images/airpodspro.jpg",
+        "lastSeen": "Active 2 hours ago",
+        "location": "Office"
+    },
+    {
+        "id": 5,
+        "name": "iPhone 5",
+        "status": "Offline",
+        "image": "/device_images/iphone5.jpg",
+        "lastSeen": "7 Years ago",
+        "location": "Unknown"
+    },
+    {
+        "id": 6,
+        "name": "iPad mini",
+        "status": "Offline",
+        "image": "/device_images/ipadmini.jpg",
+        "lastSeen": "5 Years ago",
+        "location": "Unknown"
+    }
+]
