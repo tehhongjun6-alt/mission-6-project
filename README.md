@@ -17,8 +17,8 @@ A device status dashboard built with React — log in to view the online/offline
 
 Tech Stack
 
-- **React 19** — components, props, state, Context
+- **React ** — components, props, state, Context
 - **Vite** — build tool and dev server
-- **React Router 7** — pages and route protection
-- **Bootstrap 5 + react-bootstrap** — layout and UI components
+- **React Router ** — pages and route protection
+- **Bootstrap  + react-bootstrap** — layout and UI components
 - **usehooks-ts** — `useLocalStorage` for persistent login state
