@@ -377,3 +377,37 @@ button:hover,
   font-size: 1.4rem;
   color: #ffffff;
 }
+
+/* ===== ErrorPage：与登录/仪表盘同款背景 ===== */
+.error-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background:
+    radial-gradient(ellipse at 12% 8%, rgba(151, 93, 255, 0.82) 0%, rgba(75, 27, 153, 0.42) 26%, transparent 48%),
+    radial-gradient(ellipse at 96% 82%, rgba(175, 105, 255, 0.9) 0%, rgba(93, 35, 180, 0.5) 28%, transparent 52%),
+    linear-gradient(110deg, #13082e 0%, #050509 45%, #09020f 100%);
+}
+
+.error-card {
+  color: #ffffff;
+  text-align: center;
+  background: rgba(10, 8, 20, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 16px;
+  padding: 40px 48px;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(12px);
+}
+
+.error-card h1 {
+  color: #ffffff;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.error-card p {
+  color: #b9b1e8;
+  margin-bottom: 0;
+}

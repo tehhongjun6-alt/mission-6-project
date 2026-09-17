@@ -16,18 +16,16 @@ export default function App() {
     <AuthContext.Provider value={{ token, setToken }}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Login />} />
-          <Route path="/login" element={<Login />} />
+          <Route index element={<Login />} />
+          <Route path="login" element={<Login />} />
           <Route
             element={
               <RequireAuth>
                 <Dashboard />
               </RequireAuth>
             }
-            path="/dashboard"
+            path="dashboard"
           />
-
-
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </BrowserRouter>
