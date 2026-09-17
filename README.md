@@ -1,16 +1,60 @@
-# React + Vite
+# DeviceNest
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A device status dashboard built with React — log in to view the online/offline status of your Apple devices. Built as part of the Sigma School front-end development course.
 
-Currently, two official plugins are available:
+![DeviceNest dashboard](./screenshot.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- 🔐 **Login flow** — log in with demo credentials, protected by a route guard
+- 🛡️ **Route guard** — visiting `/dashboard` without logging in redirects you to `/login`
+- 📱 **Device cards** — each device shows its image, location, last seen time and status badge
+- 🟢🔴 **Status filtering** — filter devices by All / Online / Offline
+- 💾 **Persistent login** — login state is saved in the browser, so a page refresh keeps you logged in
+- ✨ **Responsive design** — polished dark gradient UI that adapts to mobile and desktop
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- **React 19** — components, props, state, Context
+- **Vite** — build tool and dev server
+- **React Router 7** — pages and route protection
+- **Bootstrap 5 + react-bootstrap** — layout and UI components
+- **usehooks-ts** — `useLocalStorage` for persistent login state
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+```bash
+# 1. Install dependencies
+npm install
+
+# 2. Start the dev server
+npm run dev
+```
+
+Then open the local URL shown in the terminal (usually http://localhost:5173).
+
+## Demo Credentials
+
+| Field    | Value |
+|----------|-------|
+| Username | `1`   |
+| Password | `1`   |
+
+## Project Structure
+
+```
+src/
+├── AuthContext.js          # Shared login state (Context)
+├── components/
+│   └── RequireAuth.jsx     # Route guard
+├── data/
+│   └── device.json         # Device data
+└── pages/
+    ├── Login.jsx           # Login page
+    ├── Dashboard.jsx       # Device dashboard
+    └── ErrorPage.jsx       # 404 page
+```
+
+## Deployment
+
+Deployed with Vercel: [your-vercel-url.vercel.app](https://your-vercel-url.vercel.app) <!-- TODO: replace with your real Vercel URL after deploying -->
